@@ -1,0 +1,424 @@
+/*------------------GlOBAL-------------------*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body{
+    background: white;
+}
+
+section{
+    font-family:'Urbanist', sans-serif;;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active  {
+  -webkit-box-shadow: 0 0 0 30px hsl(0, 0%, 87%) inset !important;
+}
+
+/*------------------BUTTONS--------------*/
+
+.button{
+    font-family:'Urbanist', sans-serif;
+    display: inline-block;
+    background-color:hsl(0, 0%, 0%);
+    color: white;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    font-weight:500;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.button:hover{
+    background-color: hsl(0, 0%, 87%);
+}
+
+.button-icon{
+    font-size: 1.25rem;
+    margin-left: 0.5rem;
+    transition: 0.3s;
+}
+
+.button--flex{
+    display: inline-flex;
+    align-items: center;
+}
+
+/*--------------INTRO ANIMATION-------------*/
+
+.intro{
+    background: black;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 3;
+}
+
+.slider{
+    background: rgb(59, 59, 59);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform: translateY(100%);
+    z-index: 3;
+}
+
+.introtext{
+    color: rgb(255, 255, 255);
+    font-family:'Urbanist', sans-serif;
+    font-size: 3rem;
+}
+
+.hide{
+    background: black;
+    overflow: hidden;
+}
+
+.hide span{
+    transform:translateY(100%);
+    display: inline-block;
+}
+
+/*------------------NAV BAR-------------------*/
+
+.header *{
+    display: inline;
+}
+
+.header{
+    background: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height:70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 2;
+}
+
+.logo{
+    font-family:'Urbanist', sans-serif;
+    font-weight: bold;
+    font-size: 2.5rem;
+}
+
+.logo a{
+    text-decoration: none;
+    color: black;
+}
+
+.logo:hover{
+    transform: scale(1.1);
+}
+
+.nav-links ul{
+    list-style: none;
+    padding-left: 5vh;
+}
+
+.nav-links li{
+    padding-right: 10px;
+}
+
+.landing img:hover{
+    position: relative;
+    top: 7px;
+    transition: bottom ease 0.5s;
+}
+
+.scrolltobottom ul{
+    list-style: none;
+    padding-right: 5vh;
+}
+.scrolltobottom li{
+    padding-left: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    font-family:'Urbanist', sans-serif;
+}
+
+.scrolltobottom li a{
+    text-decoration: none;
+    color: black;
+}
+
+.scrolltobottom #reachme:hover{
+    top: 7px;
+}
+
+#reachme{
+    position: relative;
+    top: 0;
+    transition: top ease 0.5s; 
+}
+
+.scrolltobottom #about1:hover{
+    top: 7px;
+}
+
+#about1{
+    position: relative;
+    top: 0;
+    transition: top ease 0.5s;
+}
+
+/*----------------FIRST SECTION--------------*/
+
+.face{
+    position: absolute;
+    left: 60%;
+    top: 16%;
+    height: 780px;
+}
+
+.section1{
+    background: white;
+    min-height: 100vh;
+    background-size: cover;
+    display: flex;
+}
+
+.paragraph1{
+    align-items: center;
+    justify-content: center;
+    top: 30%;
+    left: 12%;
+    position: absolute;
+    font-family:'Urbanist', sans-serif;
+    margin-right: 50%;
+}
+
+.section1 h1{
+    font-weight: bold;
+    font-size: 35px;
+    padding-bottom: 20px;
+    color: rgb(255, 0, 0);
+}
+
+.section1 h2{
+    font-weight: bold;
+    font-size: 60px;
+    color: rgb(52, 52, 83);
+}
+.section .description1{
+    font-size: 25px;
+}
+
+.description1{
+    padding-top: 20px;
+    font-size: 25px;
+}
+
+.downarrow{
+    bottom: 0;
+    display: flex;
+    position: absolute;
+    right: 50%;
+    transform:translate(0, -50%);
+}
+
+/*---------------FIRST PARAGRAPH BOX---------------*/
+
+.section2{
+    background:rgb(117, 228, 228);
+    border: 2px solid black;
+    min-height: 60vh;
+    width: 50%;
+    margin: 50px 0 50px 0;
+    margin-left: 13%;
+    padding: 65px;
+    border-radius: 18px;
+    transition: .3s ease;
+}
+
+#heading2{
+    text-align: center;
+    font-weight: bold;
+    font-size: 60px;
+    color: rgb(52, 52, 83);
+}
+
+.section2:hover{
+    transform: scale(1.05);
+    transition: ease 0.3s
+}
+
+/*---------------SECOND PARAGRAPH BOX---------------*/
+
+.section3{
+    background-color: rgb(226, 158, 212);
+    border: 2px solid black;
+    min-height: 60vh;
+    width: 50%;
+    margin: 50px 0 50px 0;
+    margin-left: 37%;
+    padding: 65px;
+    border-radius: 18px;
+    transition: .3s ease;
+}
+.item1{
+    font-size: 25px;
+    color: black;
+    padding: 25px 75px 0px 75px;
+}
+
+.item2{
+    font-size: 25px;
+    color: black;
+    padding: 25px 75px 0px 75px;
+}
+
+#heading3{
+    text-align: center;
+    font-weight: bold;
+    font-size: 60px;
+    color: rgb(52, 52, 83);
+}
+
+.section3:hover{
+    transform: scale(1.05);
+    transition: ease 0.3s
+}
+
+
+/*------------------CONTACT SECTION--------------*/
+.section{
+    padding: 2rem 0rem 4rem;
+}
+
+.section-title{
+    font-size: 1.5rem;
+}
+
+.section-subtitle{
+    display: block;
+    margin-bottom: 3rem;
+}
+
+.section-title,
+.section-subtitle{
+    text-align: center;
+    font-family:'Urbanist', sans-serif;
+}
+
+.contact-section{
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.contact-subtitle{
+    font-family:'Urbanist', sans-serif;
+}
+
+.contact-information{
+    font-family:'Urbanist', sans-serif;  
+}
+
+.contact-container i{
+    font-family:'Urbanist', sans-serif;    
+}
+.contact-container{
+    margin-left: 5rem;  
+    margin-right: 5rem; 
+    margin-bottom: 3rem;
+}
+
+.grid{
+    display: grid;
+    gap: 1.5rem;
+}
+
+.contact-container{
+    row-gap: 3rem;
+    display: flex;
+    justify-content: center;
+}
+
+.contact-information{
+    display: flex;
+    margin-bottom: 3rem;
+}
+
+.contact-icon{
+    font-size: 2rem;
+    color:hsl(0, 0%, 0%);
+    margin-right: 1rem;
+}
+
+.contact-title{
+    font-size: 1.125rem;
+    font-weight: 1000;
+}
+
+.contact-subtitle{
+    font-size: 0.813rem;
+    color: rgb(90, 88, 88);  margin-top: 45px;
+}
+
+.contact-content{
+    background-color:hsl(0, 0%, 87%) ;
+    border-radius: 0.5rem;
+    padding: .75rem 1rem 0.25rem;
+}
+
+.contact-label{
+    font-family: 'Urbanist', sans-serif;
+    font-size: 0.813rem;
+    color: hsl(250, 8%, 15%);
+
+}
+
+.contact-input{
+    width: 100%;
+    background-color: hsl(0, 0%, 87%);
+    color: hsl(0, 0%, 0%);
+    font-family:'Urbanist', sans-serif;
+    font-size: 0.938rem;
+    border: none;
+    outline: none;
+    padding: 0.25rem 0.5rem 0.5rem 0;
+}
+
+/*------------------FOOTER--------------*/
+
+.backtotop a{
+    display: flex;
+    font-family:'Urbanist', sans-serif;
+    text-align: center;
+    justify-content: center;
+    font-weight: bold;
+    color: black;
+    font-size: 25px;
+    text-decoration: none;
+    font-style: none;
+}
+
+footer{
+    font-family:'Urbanist', sans-serif;
+    text-align: center;
+    justify-content: center;
+    padding-bottom: 50px;
+    padding-top: 15px;
+}
+
+
+
